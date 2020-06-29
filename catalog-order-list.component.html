@@ -1,0 +1,14 @@
+<ion-list>
+  <ion-list-header>
+    <ion-label>New This Week</ion-label>
+    <ion-button>See All</ion-button>
+  </ion-list-header>
+  <ion-fab vertical="top" horizontal="center" slot="fixed">
+    <ion-fab-button><ion-icon name="code"></ion-icon></ion-fab-button>
+    <ion-fab-list side="start">
+      <ion-fab-button><ion-icon name="logo-ionic"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="logo-angular"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  <app-catalog-order-item *ngFor="let orderItem of orderList"></app-catalog-order-item>
+</ion-list>
